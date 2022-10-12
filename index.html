@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Portifólio - Mateus Neres</title>
 
-     </head>
-    <body>
-        <header class="header-container">
-            <div class="header">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label> 
-                    <div class="menu"></div>
-                    <nav class="menu-items">
-                        <ul>
-                            <li id="home">
-                                <a href="/index.html">Home</a>
-                            </li>
-                            <li id="about">
-                                <a href="/index.html">Sobre</a>
-                            </li>
-                            <li id="project">
-                                <a href="#projetos">projetos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                 </div>   
-                <h1>Mateus Neres</h1>
-                <h2>Analista de testes e <br>
-                    Qualidade de Software (QA)</h2>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/mateusneres/">Linkedin</a>
-                    <a href="https://github.com/MateusNeres26">Github</a>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portifólio - Mateus Neres</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="toggle">
+                <label class="checkbox" for="toggle">
+                    <div class="trace"></div>
+                    <div class="trace"></div>
+                    <div class="trace"></div>
+                </label>
+                <div class="menu"></div>
+                <nav class="menu-items">
+                    <ul>
+                        <li id="home">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li id="about">
+                            <a href="/index.html">Sobre</a>
+                        </li>
+                        <li id="project">
+                            <a href="#projetos">projetos</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </header>
+            <h1>Mateus Neres</h1>
+            <h2>Analista de testes e <br>
+                Qualidade de Software (QA)</h2>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/mateusneres/">Linkedin</a>
+                <a href="https://github.com/MateusNeres26">Github</a>
+            </div>
+        </div>
+    </header>
 
     <main class="container" id="url">
         <div class="card-container">
@@ -59,8 +60,8 @@
     </main>
 
     <main class="container" id="url1">
-        <div class="card-container" >
-            <div class="card"> 
+        <div class="card-container">
+            <div class="card">
                 <div class="card-wrapper">
                     <h2 id="projetos">Projeto<br>JAVA</h2>
                     <p> Vem ver!</p>
@@ -72,37 +73,9 @@
             </div>
         </div>
     </main>
-        <footer class="footer">
-           Desenvolvido por Mateus Neres
-        </footer>
-
-        <script type="text/javascript">
-            const selecionado = document.querySelector("#toggle");
-            const home = document.querySelector("#home");
-            const about = document.querySelector("#about");
-            const project = document.querySelector("#project");
-            const github = document.querySelector("#url");
-            const github1 = document.querySelector("#url1");
-
-            home.addEventListener("click", function () {
-                selecionado.checked = false;
-            });
-            about.addEventListener("click", function () {
-                selecionado.checked = false;
-            });
-            project.addEventListener("click", function () {
-                selecionado.checked = false;
-            });
-
-            github.addEventListener("click", function() {
-                location.href="https://github.com/MateusNeres26/buger-eats-cypress-discovery";
-            });
-            github1.addEventListener("click", function() {
-                location.href="https://github.com/MateusNeres26/curso-julio-de-lima";
-            });
-
-            
-        </script>
-
-    </body>
+    <footer class="footer">
+        Desenvolvido por Mateus Neres
+    </footer>
+    <script src="/js/js.js"></script>
+</body>
 </html>
