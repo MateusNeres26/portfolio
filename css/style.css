@@ -13,7 +13,7 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: #60E1E0;
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: 140%;
     background-size:  contain;
@@ -208,7 +208,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     background-color: #60E1E0;
-    background-image: url(/img/m2.jpg);
+    background-image: url(../img/bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
