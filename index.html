@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
         <meta name="viewport" content="width=device-width, inicial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Portifólio</title>
+        <title>Portifólio - Mateus Neres</title>
+
      </head>
     <body>
         <header class="header-container">
@@ -19,14 +21,14 @@
                     <div class="menu"></div>
                     <nav class="menu-items">
                         <ul>
-                            <li>
-                                <a href="#">Home</a>
+                            <li id="home">
+                                <a href="/index.html">Home</a>
                             </li>
-                            <li>
-                                <a href="#">Sobre</a>
+                            <li id="about">
+                                <a href="/index.html">Sobre</a>
                             </li>
-                            <li>
-                                <a href="#">projetos</a>
+                            <li id="project">
+                                <a href="#projetos">projetos</a>
                             </li>
                         </ul>
                     </nav>
@@ -41,37 +43,66 @@
             </div>
         </header>
 
-    <main class="container">
+    <main class="container" id="url">
         <div class="card-container">
             <div class="card">
                 <div class="card-wrapper">
-                    <h2> Projeto 1</h2>
-                    <p> Vem ver!</p>
+                    <h2>Projeto Cypress</h2>
+                    <p>Vem ver!</p>
                 </div>
             </div>
             <div class="card-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
+                Neste projeto do <a href="https://app.qacademy.io/area/produto/13271">Cypress Discovery</a>
+                teve foco em automamação de testes para aplicações web em Cypress, JavaScript e Node.js.
             </div>
         </div>
     </main>
 
-    <main class="container">
-        <div class="card-container">
-            <div class="card">
+    <main class="container" id="url1">
+        <div class="card-container" >
+            <div class="card"> 
                 <div class="card-wrapper">
-                    <h2> Projeto 1</h2>
+                    <h2 id="projetos">Projeto<br>JAVA</h2>
                     <p> Vem ver!</p>
                 </div>
             </div>
             <div class="card-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
+                Neste projeto, foi realizado na turma 6 do <a href="https://programa.juliodelima.com.br/">PTQS</a>
+                e teve foco em automamação de testes para aplicações web utilizando JAVA e selenium.
             </div>
         </div>
     </main>
         <footer class="footer">
            Desenvolvido por Mateus Neres
         </footer>
+
+        <script type="text/javascript">
+            const selecionado = document.querySelector("#toggle");
+            const home = document.querySelector("#home");
+            const about = document.querySelector("#about");
+            const project = document.querySelector("#project");
+            const github = document.querySelector("#url");
+            const github1 = document.querySelector("#url1");
+
+            home.addEventListener("click", function () {
+                selecionado.checked = false;
+            });
+            about.addEventListener("click", function () {
+                selecionado.checked = false;
+            });
+            project.addEventListener("click", function () {
+                selecionado.checked = false;
+            });
+
+            github.addEventListener("click", function() {
+                location.href="https://github.com/MateusNeres26/buger-eats-cypress-discovery";
+            });
+            github1.addEventListener("click", function() {
+                location.href="https://github.com/MateusNeres26/curso-julio-de-lima";
+            });
+
+            
+        </script>
+
     </body>
 </html>
